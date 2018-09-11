@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang= “en”>
+	<head>
+		<meta charset=“utf-8”>
+		<meta name=“description” content=“pdf reader”>
+		<title>CASINO</title>
+		<link rel="stylesheet" href="myStyles.css">
+		<link href="https://fonts.googleapis.com/css?family=Halant|Marcellus+SC" rel="stylesheet">
+		<style id="styleBackCard" class="animationCard"> </style>
+
+	</head>
+	<body>
+		<header>
+			<h1> Casino Blackjack</h1>
+		</header>
+	</main>
+		<div class="board">
+			<div class="cards">
+	      <div class="up">
+	  			<div class="fixedUp startingC backG3">
+						<p class="cardNU startingN">&#8203; </p>
+						<p class="suit">&#8203;</p>
+					  <p class="cardND startingN">&#8203;  </p>
+					</div>
+	        <div class="fixedUp cpuC backG4" id="backCard">
+						<p class="cardNU cpuN"> &#8203; </p>
+						<p class="suit">&#8203;</p>
+						<p class="cardND cpuN"> &#8203; </p>
+					</div>
+	        <div class="fixedUp cpuC">
+						<p class="cardNU cpuN"> &#8203; </p>
+						<p class="suit">&#8203;</p>
+					  <p class="cardND cpuN"> &#8203; </p>
+					</div>
+	        <div class="fixedUp cpuC">
+						<p class="cardNU cpuN"> &#8203; </p>
+						<p class="suit">&#8203;</p>
+						<p class="cardND cpuN"> &#8203; </p>
+					</div>
+	        <div class="fixedUp cpuC">
+						<p class="cardNU cpuN"> &#8203; </p>
+						<p class="suit">&#8203;</p>
+						<p class="cardND cpuN"> &#8203; </p>
+				  </div>
+
+	      </div>
+
+	      <div class="down">
+	  			<div  class="fixedDown startingC backG1" >
+						<p class="startingN cardNU"> &#8203;</p>
+						<p class="suit">&#8203;</p>
+						<p class="startingN cardND">&#8203;</p>
+					</div>
+					<div class="fixedDown startingC backG2">
+						<p class=" startingN cardNU">&#8203;</p>
+						<p class="suit">&#8203;</p>
+						<p class="startingN cardND">&#8203;</p>
+					</div>
+					<div class="fixedDown optionalC" onclick="clickCard(); this.onclick=null;">
+						<p class="cardNU optionalN">&#8203;</p>
+						<p class="suit">&#8203;</p>
+						<p class="cardND optionalN">&#8203;</p>
+					</div>
+					<div class="fixedDown optionalC" onclick="clickCard(); this.onclick=null;">
+						<p class="cardNU optionalN">&#8203;</p>
+						<p class="suit">&#8203;</p>
+						<p class="cardND optionalN">&#8203; </p>
+					</div>
+					<div class="fixedDown optionalC" onclick="clickCard(); this.onclick=null;">
+						<p class="cardNU optionalN">&#8203;</p>
+						<p class="suit">&#8203;</p>
+						<p class="cardND optionalN">&#8203;  </p>
+					</div>
+	      </div>
+		  </div>
+			<div id="besides">
+				<div id="fixedCard">
+					<img class="movingC1" src="deck.png" width="6.6em" height="10.6em">
+					<img class="movingC2" src="deck.png" width="6.6em" height="10.6em">
+					<img class="movingC3" src="deck.png" width="6.6em" height="10.6em">
+					<img class="movingC4" src="deck.png" width="6.6em" height="10.6em">
+				</div>
+				<div class="scorediv">
+					<p class="THEscore"> Your sum is: </p>
+					<p id="scoreBox"> 0 </p>
+					<p id="message">&#8203; </p>
+					<p id="opponentResult"> &#8203; </p>
+				</div>
+		</div>
+		<div class="allButtons">
+			<p class="button" onclick="startMyGame(); startTheGame();  this.onclick=null;" > Start Game </p>
+			<p class="button" onclick="endGame(); this.onclick=null;"> End Game </p>
+			<p class="button" onclick="restart()" > Restart Game </p>
+		</div>
+	</div>
+
+		<!-- <div class="ball"></div> -->
+
+	</main>
+	<script src="myScript.js"></script>
+
+	</body>
+
+
+</html>
