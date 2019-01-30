@@ -3,4 +3,4 @@ The purpose of this project was to practice Javascript, HTML and CSS after I tau
 
 Link to access the game: https://enigmatic-plains-87006.herokuapp.com/
 
-![](library-gif.gif)
+![](blackjack-gif.gif)
